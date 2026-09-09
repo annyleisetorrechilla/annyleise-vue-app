@@ -111,7 +111,7 @@
     </section>
 
     <footer class="footer">
-      <p>&copy; 2023 Central Philippine University. All Rights Reserved.</p>
+      <p>&copy; 2023 Grunge University. All Rights Reserved.</p>
     </footer>
   </div>
 </template>
@@ -133,7 +133,7 @@
 }
 
 .subtitle {
-  color: #bfa15f;
+  color: #f4c542;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -142,7 +142,7 @@
 }
 
 .title {
-  color: #2b1b5e;
+  color: #111111;
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 16px;
@@ -151,7 +151,7 @@
 .underline {
   width: 45px;
   height: 2px;
-  background-color: #bfa15f;
+  background-color: #d62828;
   margin: 0 auto;
 }
 
@@ -191,11 +191,11 @@
 .icon {
   width: 22px;
   height: 22px;
-  color: #2b1b5e;
+  color: #111111;
 }
 
 .card h2 {
-  color: #2b1b5e;
+  color: #111111;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 22px;
@@ -219,7 +219,7 @@
 }
 
 .badge {
-  background-color: #bfa15f;
+  background-color: #d62828;
   color: #ffffff;
   width: 18px;
   height: 18px;
@@ -250,7 +250,7 @@
 
 .card-link {
   margin-top: auto;
-  color: #2b1b5e;
+  color: #d62828;
   font-weight: 700;
   font-size: 13px;
   text-decoration: none;
@@ -277,24 +277,24 @@
 
 .program-btn {
   background-color: #ffffff;
-  border: 1px solid #eef0f5;
+  border: 1px solid #d9d9d9;
   border-radius: 6px;
   padding: 12px 16px;
   text-align: left;
   font-size: 13px;
   font-weight: 700;
-  color: #2b1b5e;
+  color: #111111;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .program-btn:hover {
-  border-color: #2b1b5e;
-  background-color: #fcfcfd;
+  border-color: #d62828;
+  background-color: #fff7f7;
 }
 
 .footer {
-  background-color: #1d0c42;
+  background-color: #111111;
   color: #ffffff;
   text-align: center;
   padding: 18px 20px;

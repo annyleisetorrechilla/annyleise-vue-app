@@ -21,7 +21,7 @@ defineProps({
 
 .subtitle {
   margin: 0 0 8px;
-  color: #b58c36;
+  color: #f4c542;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -30,7 +30,7 @@ defineProps({
 
 h2 {
   margin: 0;
-  color: #2b1b5e;
+  color: #111111;
   font-size: 36px;
 }
 
@@ -38,7 +38,7 @@ h2 {
   width: 48px;
   height: 3px;
   margin: 14px auto 0;
-  background: #c8a100;
+  background: #d62828;
 }
 
 @media (max-width: 600px) {

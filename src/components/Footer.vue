@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-brand">
-        <h2>Central Philippine University</h2>
+        <h2>Grunge University</h2>
         <p>SCIENTIA ET FIDES</p>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</span>
       </div>
@@ -30,14 +30,14 @@
       </div>
     </div>
 
-    <div class="copyright">© 2026 Central Philippine University. All Rights Reserved.</div>
+    <div class="copyright">© 2026 Grunge University. All Rights Reserved.</div>
   </footer>
 </template>
 
 <style scoped>
 .footer {
-  background-color: #1b1464;
-  color: #f0e9d2;
+  background-color: #111111;
+  color: #ffffff;
   padding: 40px 6%;
   font-family: 'Georgia', serif;
   margin-top: 0;
@@ -55,14 +55,14 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 6px;
-  color: #f0e9d2;
+  color: #ffffff;
 }
 
 .footer-brand p {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #d1a943;
+  color: #f4c542;
   margin-bottom: 14px;
   font-style: italic;
 }
@@ -70,7 +70,7 @@
 .footer-brand span {
   font-size: 14px;
   line-height: 1.6;
-  color: #e6e1d9;
+  color: #d9d9d9;
 }
 
 .footer-column {
@@ -83,21 +83,21 @@
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #f0e9d2;
+  color: #ffffff;
 }
 
 .footer-column a,
 .footer-column span,
 .footer-column address {
   font-size: 14px;
-  color: #e6e1d9;
+  color: #d9d9d9;
   text-decoration: none;
   font-style: normal;
   transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-  color: #d1a943;
+  color: #f4c542;
   text-decoration: underline;
 }
 
@@ -107,7 +107,7 @@
   text-align: center;
   padding: 18px 0;
   font-size: 13px;
-  color: #e6e1d9;
+  color: #d9d9d9;
   font-weight: 500;
 }
 

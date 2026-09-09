@@ -1,14 +1,14 @@
 <script setup>
-import logo from '@/assets/official_cpu_seal.png'
+import logo from '@/assets/Nirvana-Smiley-Face-Logo-600x600.png'
 </script>
 
 <template>
   <header class="navbar">
     <div class="logo">
-      <img :src="logo" alt="CPU Logo" />
+      <img :src="logo" alt="Grunge University Logo" />
 
       <div class="logo-text">
-        <h2>Central Philippine University</h2>
+        <h2>Grunge University</h2>
         <p>SCIENTIA ET FIDES</p>
       </div>
     </div>
@@ -42,7 +42,7 @@ import logo from '@/assets/official_cpu_seal.png'
   justify-content: space-between;
   padding: 14px 6%;
   background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #d9d9d9;
   gap: 30px;
   font-family: 'Georgia', serif;
 }
@@ -61,14 +61,14 @@ import logo from '@/assets/official_cpu_seal.png'
 }
 
 .logo-text h2 {
-  color: #32146f;
+  color: #111111;
   font-size: 20px;
   margin: 0;
   font-weight: bold;
 }
 
 .logo-text p {
-  color: #b58c36;
+  color: #f4c542;
   font-size: 10px;
   letter-spacing: 3px;
   margin: 4px 0 0;
@@ -91,11 +91,11 @@ nav a {
 }
 
 nav a:hover {
-  color: #32146f;
+  color: #d62828;
 }
 
 .nav-link.router-link-active {
-  color: #32146f;
+  color: #d62828;
   position: relative;
   font-weight: 700;
 }
@@ -107,7 +107,7 @@ nav a:hover {
   right: 0;
   bottom: -10px;
   height: 2px;
-  background: #32146f;
+  background: #d62828;
   border-radius: 2px;
 }
 
@@ -120,20 +120,20 @@ nav a:hover {
 .search {
   border: none;
   background: transparent;
-  color: #32146f;
+  color: #111111;
   font-size: 25px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .search:hover {
-  color: #b58c36;
+  color: #d62828;
 }
 
 .login {
   border: none;
-  background: #32146f;
-  color: white;
+  background: #d62828;
+  color: #ffffff;
   padding: 11px 22px;
   border-radius: 4px;
   font-weight: bold;
@@ -142,7 +142,7 @@ nav a:hover {
 }
 
 .login:hover {
-  background: #47238d;
+  background: #b91c1c;
 }
 
 @media (max-width: 1100px) {

@@ -1,5 +1,5 @@
 <script setup>
-import logo from '../assets/official_cpu_seal.png'
+import logo from '../assets/Nirvana-Smiley-Face-Logo-600x600.png'
 import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
@@ -17,7 +17,7 @@ import SectionHeader from '../components/SectionHeader.vue'
         <div class="divider-line"></div>
 
         <p>
-          A leading Christian institution in the Philippines, Central Philippine University nurtures
+          A leading Christian institution in the Philippines, Grunge University nurtures
           intellectual growth and spiritual development through a commitment to
           <strong>Scientia et Fides</strong> (Science and Faith).
         </p>
@@ -50,10 +50,10 @@ import SectionHeader from '../components/SectionHeader.vue'
       <div class="right-hero">
         <div class="card">
           <div class="logo-circle">
-            <img :src="logo" alt="CPU Logo" />
+            <img :src="logo" alt="Grunge University Logo" />
           </div>
 
-          <h2>Central Philippine University</h2>
+          <h2>Grunge University</h2>
 
           <h3>SCIENTIA ET FIDES</h3>
 
@@ -177,7 +177,7 @@ import SectionHeader from '../components/SectionHeader.vue'
   justify-content: space-between;
   align-items: flex-start;
   padding: 80px 100px;
-  background: #f5f6fa;
+  background: #f4f4f4;
   min-height: calc(100vh - 120px);
 }
 
@@ -187,7 +187,7 @@ import SectionHeader from '../components/SectionHeader.vue'
 }
 
 h4 {
-  color: #bfa15f;
+  color: #f4c542;
   letter-spacing: 2px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -203,19 +203,19 @@ h4::before {
   display: inline-block;
   width: 20px;
   height: 2px;
-  background-color: #bfa15f;
+  background-color: #f4c542;
 }
 
 h1 {
   font-size: 56px;
-  color: #2b1b5e;
+  color: #111111;
   line-height: 1.1;
   margin-bottom: 25px;
   font-weight: 700;
 }
 
 .highlight {
-  color: #bfa15f;
+  color: #d62828;
   font-style: italic;
   font-weight: 700;
 }
@@ -223,7 +223,7 @@ h1 {
 .divider-line {
   width: 32px;
   height: 2px;
-  background-color: #bfa15f;
+  background-color: #f4c542;
   margin-bottom: 25px;
 }
 
@@ -236,7 +236,7 @@ h1 {
 }
 
 .left p strong {
-  color: #432080;
+  color: #d62828;
 }
 
 .buttons {
@@ -246,8 +246,8 @@ h1 {
 }
 
 .primary {
-  background: #2b1b5e;
-  color: #f5f6fa;
+  background: #d62828;
+  color: #ffffff;
   border: none;
   padding: 15px 30px;
   border-radius: 6px;
@@ -259,13 +259,13 @@ h1 {
 }
 
 .primary:hover {
-  background: #432080;
+  background: #b91c1c;
 }
 
 .secondary {
   background: transparent;
-  color: #2b1b5e;
-  border: 2px solid #2b1b5e;
+  color: #111111;
+  border: 2px solid #111111;
   padding: 15px 30px;
   border-radius: 6px;
   font-weight: 700;
@@ -276,9 +276,9 @@ h1 {
 }
 
 .secondary:hover {
-  background: #bfa15f;
-  color: #f5f6fa;
-  border-color: #bfa15f;
+  background: #f4c542;
+  color: #111111;
+  border-color: #f4c542;
 }
 
 .stats {
@@ -288,14 +288,14 @@ h1 {
   color: #ffffff;
   background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 0 0 1px #e6e6ec;
+  box-shadow: 0 0 0 1px #d9d9d9;
   padding: 20px 30px;
 }
 
 .stats > .stat-item {
   flex: 1;
   text-align: center;
-  border-right: 1px solid #e6e6ec;
+  border-right: 1px solid #d9d9d9;
   padding: 0 15px;
 }
 
@@ -311,13 +311,13 @@ h1 {
 
 .number {
   font-size: 24px;
-  color: #2b1b5e;
+  color: #111111;
   margin-bottom: 4px;
 }
 
 .label {
   font-size: 14px;
-  color: #333333;
+  color: #555555;
 }
 
 .right-hero {
@@ -328,13 +328,13 @@ h1 {
 }
 
 .card {
-  background: linear-gradient(135deg, #fff9e6 0%, #ffffff 50%, #fdfbf7 100%);
+  background: #ffffff;
   width: 380px;
   padding: 40px;
   text-align: center;
   border-radius: 24px;
-  box-shadow: 0 10px 25px rgba(51, 51, 51, 0.08);
-  border: 1px solid #fef3d6;
+  box-shadow: 0 10px 25px rgba(17, 17, 17, 0.08);
+  border: 1px solid #d9d9d9;
   position: relative;
 }
 
@@ -355,14 +355,14 @@ h1 {
 }
 
 .card h2 {
-  color: #2b1b5e;
+  color: #111111;
   font-size: 28px;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
 .card h3 {
-  color: #bfa15f;
+  color: #f4c542;
   letter-spacing: 3px;
   font-size: 13px;
   margin-bottom: 20px;
@@ -372,7 +372,7 @@ h1 {
 .line {
   width: 40px;
   height: 2px;
-  background: #bfa15f;
+  background: #d62828;
   margin: 0 auto 20px auto;
   border-radius: 2px;
 }
@@ -395,11 +395,11 @@ h1 {
 }
 
 .alt-bg {
-  background: #f5f6fa;
+  background: linear-gradient(180deg, #f4f4f4 0%, #f9f4df 100%);
 }
 
 .lorem-text {
-  color: #555555;
+  color: #333333;
   font-size: 16px;
   line-height: 1.8;
   text-align: center;
@@ -423,7 +423,7 @@ h1 {
 .admissions-subtitle {
   display: block;
   margin-bottom: 8px;
-  color: #bfa15f;
+  color: #f4c542;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -431,7 +431,7 @@ h1 {
 
 .admissions-heading h2 {
   margin-bottom: 16px;
-  color: #2b1b5e;
+  color: #111111;
   font-size: 38px;
 }
 
@@ -439,14 +439,14 @@ h1 {
   width: 45px;
   height: 2px;
   margin: 0 auto;
-  background: #bfa15f;
+  background: #d62828;
 }
 
 .admission-card {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d9d9d9;
   border-radius: 8px;
   background: #ffffff;
 }
@@ -459,18 +459,18 @@ h1 {
   height: 44px;
   margin-bottom: 22px;
   border-radius: 50%;
-  background: #f7f4ec;
+  background: #f4f4f4;
 }
 
 .admission-icon {
   width: 22px;
   height: 22px;
-  color: #2b1b5e;
+  color: #111111;
 }
 
 .admission-card h3 {
   margin-bottom: 15px;
-  color: #2b1b5e;
+  color: #111111;
 }
 
 .admission-card p {
@@ -480,7 +480,7 @@ h1 {
 }
 
 .admission-card a {
-  color: #2b1b5e;
+  color: #d62828;
   font-weight: 700;
   text-decoration: none;
 }
@@ -511,14 +511,14 @@ h1 {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #bfa15f;
+  background: #d62828;
   color: white;
   font-size: 11px;
   font-weight: 700;
 }
 
 .check {
-  color: #4caf50;
+  color: #d62828;
   font-weight: 700;
 }
 
@@ -534,10 +534,10 @@ h1 {
 
 .program-btn {
   padding: 12px 16px;
-  border: 1px solid #eef0f5;
+  border: 1px solid #d9d9d9;
   border-radius: 6px;
   background: white;
-  color: #2b1b5e;
+  color: #111111;
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
@@ -545,8 +545,8 @@ h1 {
 }
 
 .program-btn:hover {
-  border-color: #2b1b5e;
-  background: #fcfcfd;
+  border-color: #d62828;
+  background: #fff7f7;
 }
 
 @media (max-width: 900px) {
