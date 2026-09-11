@@ -41,8 +41,8 @@ import logo from '@/assets/Nirvana-Smiley-Face-Logo-600x600.png'
   align-items: center;
   justify-content: space-between;
   padding: 14px 6%;
-  background: #ffffff;
-  border-bottom: 1px solid #d9d9d9;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
   gap: 30px;
   font-family: 'Georgia', serif;
 }
@@ -61,14 +61,14 @@ import logo from '@/assets/Nirvana-Smiley-Face-Logo-600x600.png'
 }
 
 .logo-text h2 {
-  color: #111111;
+  color: var(--text-primary);
   font-size: 20px;
   margin: 0;
   font-weight: bold;
 }
 
 .logo-text p {
-  color: #f4c542;
+  color: var(--accent);
   font-size: 10px;
   letter-spacing: 3px;
   margin: 4px 0 0;
@@ -84,18 +84,18 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #555555;
+  color: var(--text-secondary);
   font-size: 14px;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #d62828;
+  color: var(--accent-hover);
 }
 
 .nav-link.router-link-active {
-  color: #d62828;
+  color: var(--accent);
   position: relative;
   font-weight: 700;
 }
@@ -107,7 +107,7 @@ nav a:hover {
   right: 0;
   bottom: -10px;
   height: 2px;
-  background: #d62828;
+  background: var(--accent);
   border-radius: 2px;
 }
 
@@ -120,20 +120,20 @@ nav a:hover {
 .search {
   border: none;
   background: transparent;
-  color: #111111;
+  color: var(--text-primary);
   font-size: 25px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .search:hover {
-  color: #d62828;
+  color: var(--accent-hover);
 }
 
 .login {
   border: none;
-  background: #d62828;
-  color: #ffffff;
+  background: var(--accent);
+  color: var(--bg-primary);
   padding: 11px 22px;
   border-radius: 4px;
   font-weight: bold;
@@ -142,7 +142,7 @@ nav a:hover {
 }
 
 .login:hover {
-  background: #b91c1c;
+  background: var(--accent-hover);
 }
 
 @media (max-width: 1100px) {

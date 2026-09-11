@@ -159,8 +159,8 @@ const formatCurrency = (amount) => `₱${Math.round(amount).toLocaleString('en-U
 }
 .page {
   min-height: 100vh;
-  background-color: #f8fafc;
-  color: #334155;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
@@ -169,15 +169,15 @@ const formatCurrency = (amount) => `₱${Math.round(amount).toLocaleString('en-U
   padding: 0 24px;
 }
 .hero {
-  background-color: #0f172a;
-  color: #fff;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 40px 0;
 }
 .eyebrow {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #94a3b8;
+  color: var(--accent);
   margin: 0 0 8px;
 }
 .hero h1 {
@@ -186,7 +186,7 @@ const formatCurrency = (amount) => `₱${Math.round(amount).toLocaleString('en-U
 }
 .lead {
   max-width: 640px;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   margin: 0;
   line-height: 1.6;
 }
@@ -197,8 +197,8 @@ const formatCurrency = (amount) => `₱${Math.round(amount).toLocaleString('en-U
   gap: 32px;
 }
 .card {
-  background-color: #fff;
-  border: 1px solid #e2e8f0;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 24px;
 }
@@ -208,7 +208,7 @@ const formatCurrency = (amount) => `₱${Math.round(amount).toLocaleString('en-U
 }
 .muted {
   font-size: 14px;
-  color: #64748b;
+  color: var(--text-secondary);
   margin: 0 0 24px;
 }
 .requirements-grid {
@@ -220,7 +220,7 @@ const formatCurrency = (amount) => `₱${Math.round(amount).toLocaleString('en-U
 .requirements-grid ul {
   margin: 0;
   padding-left: 20px;
-  color: #475569;
+  color: var(--text-secondary);
   line-height: 1.8;
 }
 .form-grid {
@@ -236,15 +236,16 @@ const formatCurrency = (amount) => `₱${Math.round(amount).toLocaleString('en-U
 .field > span {
   display: block;
   font-weight: 600;
-  color: #475569;
+  color: var(--text-secondary);
   margin-bottom: 6px;
 }
 select {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border);
   border-radius: 6px;
-  background-color: #fff;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   font-size: 14px;
 }
 input[type='range'] {
@@ -255,7 +256,7 @@ input[type='range'] {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
-  color: #94a3b8;
+  color: var(--text-secondary);
   margin-top: 4px;
 }
 .payment-terms {
@@ -270,18 +271,18 @@ input[type='range'] {
   padding: 6px 14px;
   border-radius: 6px;
   font-size: 14px;
-  border: 1px solid #cbd5e1;
-  background-color: #fff;
-  color: #475569;
+  border: 1px solid var(--border);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
   cursor: pointer;
 }
 .pill.active {
-  background-color: #0f172a;
-  border-color: #0f172a;
-  color: #fff;
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg-primary);
 }
 .table-wrap {
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
   border-radius: 6px;
   overflow-x: auto;
 }
@@ -292,8 +293,8 @@ table {
   min-width: 530px;
 }
 thead {
-  background-color: #f1f5f9;
-  color: #64748b;
+  background-color: var(--bg-secondary);
+  color: var(--accent);
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -309,19 +310,19 @@ td {
   text-align: left;
 }
 tbody tr {
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid var(--border);
 }
 .muted-row {
-  color: #64748b;
+  color: var(--text-secondary);
 }
 .total-row {
-  background-color: #f8fafc;
-  border-top: 1px solid #e2e8f0;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
   font-weight: 700;
 }
 .fine-print {
   font-size: 12px;
-  color: #94a3b8;
+  color: var(--text-secondary);
   margin: 16px 0 0;
 }
 .cta {
@@ -329,8 +330,8 @@ tbody tr {
   padding: 24px 0;
 }
 .primary-btn {
-  background-color: #0f172a;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--bg-primary);
   border: none;
   padding: 12px 24px;
   border-radius: 6px;
@@ -339,7 +340,7 @@ tbody tr {
   cursor: pointer;
 }
 .primary-btn:hover {
-  background-color: #1e293b;
+  background-color: var(--accent-hover);
 }
 @media (max-width: 640px) {
   .form-grid,

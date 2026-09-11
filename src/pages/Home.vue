@@ -177,7 +177,7 @@ import SectionHeader from '../components/SectionHeader.vue'
   justify-content: space-between;
   align-items: flex-start;
   padding: 80px 100px;
-  background: #f4f4f4;
+  background: var(--bg-primary);
   min-height: calc(100vh - 120px);
 }
 
@@ -187,7 +187,7 @@ import SectionHeader from '../components/SectionHeader.vue'
 }
 
 h4 {
-  color: #f4c542;
+  color: var(--accent);
   letter-spacing: 2px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -203,19 +203,19 @@ h4::before {
   display: inline-block;
   width: 20px;
   height: 2px;
-  background-color: #f4c542;
+  background-color: var(--accent);
 }
 
 h1 {
   font-size: 56px;
-  color: #111111;
+  color: var(--text-primary);
   line-height: 1.1;
   margin-bottom: 25px;
   font-weight: 700;
 }
 
 .highlight {
-  color: #d62828;
+  color: var(--accent);
   font-style: italic;
   font-weight: 700;
 }
@@ -223,12 +223,12 @@ h1 {
 .divider-line {
   width: 32px;
   height: 2px;
-  background-color: #f4c542;
+  background-color: var(--accent);
   margin-bottom: 25px;
 }
 
 .left p {
-  color: #333333;
+  color: var(--text-secondary);
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 35px;
@@ -236,7 +236,7 @@ h1 {
 }
 
 .left p strong {
-  color: #d62828;
+  color: var(--accent);
 }
 
 .buttons {
@@ -246,8 +246,8 @@ h1 {
 }
 
 .primary {
-  background: #d62828;
-  color: #ffffff;
+  background: var(--accent);
+  color: var(--bg-primary);
   border: none;
   padding: 15px 30px;
   border-radius: 6px;
@@ -259,13 +259,13 @@ h1 {
 }
 
 .primary:hover {
-  background: #b91c1c;
+  background: var(--accent-hover);
 }
 
 .secondary {
   background: transparent;
-  color: #111111;
-  border: 2px solid #111111;
+  color: var(--text-primary);
+  border: 2px solid var(--border);
   padding: 15px 30px;
   border-radius: 6px;
   font-weight: 700;
@@ -276,26 +276,26 @@ h1 {
 }
 
 .secondary:hover {
-  background: #f4c542;
-  color: #111111;
-  border-color: #f4c542;
+  background: var(--accent-hover);
+  color: var(--bg-primary);
+  border-color: var(--accent-hover);
 }
 
 .stats {
   display: flex;
   gap: 20px;
   font-weight: 700;
-  color: #ffffff;
-  background: #ffffff;
+  color: var(--text-primary);
+  background: var(--bg-card);
   border-radius: 8px;
-  box-shadow: 0 0 0 1px #d9d9d9;
+  box-shadow: 0 0 0 1px var(--border);
   padding: 20px 30px;
 }
 
 .stats > .stat-item {
   flex: 1;
   text-align: center;
-  border-right: 1px solid #d9d9d9;
+  border-right: 1px solid var(--border);
   padding: 0 15px;
 }
 
@@ -311,13 +311,13 @@ h1 {
 
 .number {
   font-size: 24px;
-  color: #111111;
+  color: var(--accent);
   margin-bottom: 4px;
 }
 
 .label {
   font-size: 14px;
-  color: #555555;
+  color: var(--text-secondary);
 }
 
 .right-hero {
@@ -328,41 +328,41 @@ h1 {
 }
 
 .card {
-  background: #ffffff;
+  background: var(--bg-card);
   width: 380px;
+  height: 500px;
   padding: 40px;
   text-align: center;
   border-radius: 24px;
-  box-shadow: 0 10px 25px rgba(17, 17, 17, 0.08);
-  border: 1px solid #d9d9d9;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo-circle {
-  background: transparent;
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 24px;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .logo-circle img {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 
 .card h2 {
-  color: #111111;
+  color: var(--text-primary);
   font-size: 28px;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
 .card h3 {
-  color: #f4c542;
+  color: var(--accent);
   letter-spacing: 3px;
   font-size: 13px;
   margin-bottom: 20px;
@@ -372,20 +372,20 @@ h1 {
 .line {
   width: 40px;
   height: 2px;
-  background: #d62828;
+  background: var(--accent);
   margin: 0 auto 20px auto;
   border-radius: 2px;
 }
 
 .quote {
-  color: #333333;
+  color: var(--text-secondary);
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
 }
 
 .page-content {
-  background: #ffffff;
+  background: var(--bg-primary);
 }
 
 .section {
@@ -395,11 +395,18 @@ h1 {
 }
 
 .alt-bg {
-  background: linear-gradient(180deg, #f4f4f4 0%, #f9f4df 100%);
+  background: var(--bg-secondary);
+}
+
+#about :deep(.section-header h2),
+#academics :deep(.section-header h2),
+#campus :deep(.section-header h2),
+#news :deep(.section-header h2) {
+  color: #ffffff;
 }
 
 .lorem-text {
-  color: #333333;
+  color: var(--text-secondary);
   font-size: 16px;
   line-height: 1.8;
   text-align: center;
@@ -423,7 +430,7 @@ h1 {
 .admissions-subtitle {
   display: block;
   margin-bottom: 8px;
-  color: #f4c542;
+  color: var(--accent);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -431,7 +438,7 @@ h1 {
 
 .admissions-heading h2 {
   margin-bottom: 16px;
-  color: #111111;
+  color: var(--text-primary);
   font-size: 38px;
 }
 
@@ -439,16 +446,16 @@ h1 {
   width: 45px;
   height: 2px;
   margin: 0 auto;
-  background: #d62828;
+  background: var(--accent);
 }
 
 .admission-card {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--border);
   border-radius: 8px;
-  background: #ffffff;
+  background: var(--bg-card);
 }
 
 .icon-wrapper {
@@ -459,28 +466,28 @@ h1 {
   height: 44px;
   margin-bottom: 22px;
   border-radius: 50%;
-  background: #f4f4f4;
+  background: var(--bg-secondary);
 }
 
 .admission-icon {
   width: 22px;
   height: 22px;
-  color: #111111;
+  color: var(--accent);
 }
 
 .admission-card h3 {
   margin-bottom: 15px;
-  color: #111111;
+  color: var(--text-primary);
 }
 
 .admission-card p {
   margin-bottom: 20px;
-  color: #555555;
+  color: var(--text-secondary);
   line-height: 1.7;
 }
 
 .admission-card a {
-  color: #d62828;
+  color: var(--accent);
   font-weight: 700;
   text-decoration: none;
 }
@@ -498,7 +505,7 @@ h1 {
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 14px;
-  color: #555555;
+  color: var(--text-secondary);
   font-size: 13px;
   line-height: 1.4;
 }
@@ -511,14 +518,14 @@ h1 {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #d62828;
-  color: white;
+  background: var(--accent);
+  color: var(--bg-primary);
   font-size: 11px;
   font-weight: 700;
 }
 
 .check {
-  color: #d62828;
+  color: var(--success);
   font-weight: 700;
 }
 
@@ -534,10 +541,10 @@ h1 {
 
 .program-btn {
   padding: 12px 16px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--border);
   border-radius: 6px;
-  background: white;
-  color: #111111;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
@@ -545,8 +552,8 @@ h1 {
 }
 
 .program-btn:hover {
-  border-color: #d62828;
-  background: #fff7f7;
+  border-color: var(--accent);
+  background: var(--bg-card);
 }
 
 @media (max-width: 900px) {

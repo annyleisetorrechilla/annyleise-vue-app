@@ -18,6 +18,19 @@ import Footer from '@/components/Footer.vue'
 </template>
 
 <style>
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #252525;
+  --accent: #f2d500;
+  --accent-hover: #ffd900;
+  --text-primary: #f5f5f5;
+  --text-secondary: #b8b8b8;
+  --border: #3a3a3a;
+  --success: #a8b82a;
+  --error: #c94a3a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +44,8 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: white;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 button,

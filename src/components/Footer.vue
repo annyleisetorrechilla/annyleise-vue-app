@@ -36,8 +36,8 @@
 
 <style scoped>
 .footer {
-  background-color: #111111;
-  color: #ffffff;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 40px 6%;
   font-family: 'Georgia', serif;
   margin-top: 0;
@@ -55,14 +55,14 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 6px;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .footer-brand p {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #f4c542;
+  color: var(--accent);
   margin-bottom: 14px;
   font-style: italic;
 }
@@ -70,7 +70,7 @@
 .footer-brand span {
   font-size: 14px;
   line-height: 1.6;
-  color: #d9d9d9;
+  color: var(--text-secondary);
 }
 
 .footer-column {
@@ -83,31 +83,31 @@
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .footer-column a,
 .footer-column span,
 .footer-column address {
   font-size: 14px;
-  color: #d9d9d9;
+  color: var(--text-secondary);
   text-decoration: none;
   font-style: normal;
   transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-  color: #f4c542;
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
 .copyright {
   margin-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid var(--border);
   text-align: center;
   padding: 18px 0;
   font-size: 13px;
-  color: #d9d9d9;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 

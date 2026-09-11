@@ -118,7 +118,7 @@
 
 <style scoped>
 .admissions-page {
-  background-color: #f9fafc;
+  background-color: var(--bg-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -133,7 +133,7 @@
 }
 
 .subtitle {
-  color: #f4c542;
+  color: var(--accent);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -142,7 +142,7 @@
 }
 
 .title {
-  color: #111111;
+  color: var(--text-primary);
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 16px;
@@ -151,7 +151,7 @@
 .underline {
   width: 45px;
   height: 2px;
-  background-color: #d62828;
+  background-color: var(--accent);
   margin: 0 auto;
 }
 
@@ -169,10 +169,11 @@
 }
 
 .card {
-  background: #ffffff;
+  background: var(--bg-card);
   border-radius: 12px;
   padding: 35px 28px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
 }
@@ -181,7 +182,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #f7f4ec;
+  background-color: var(--bg-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,11 +192,11 @@
 .icon {
   width: 22px;
   height: 22px;
-  color: #111111;
+  color: var(--accent);
 }
 
 .card h2 {
-  color: #111111;
+  color: var(--text-primary);
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 22px;
@@ -214,13 +215,13 @@
   gap: 12px;
   margin-bottom: 16px;
   font-size: 13px;
-  color: #555555;
+  color: var(--text-secondary);
   line-height: 1.4;
 }
 
 .badge {
-  background-color: #d62828;
-  color: #ffffff;
+  background-color: var(--accent);
+  color: var(--bg-primary);
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -239,18 +240,18 @@
   gap: 10px;
   margin-bottom: 14px;
   font-size: 13px;
-  color: #555555;
+  color: var(--text-secondary);
 }
 
 .check {
-  color: #4caf50;
+  color: var(--success);
   font-size: 13px;
   font-weight: bold;
 }
 
 .card-link {
   margin-top: auto;
-  color: #d62828;
+  color: var(--accent);
   font-weight: 700;
   font-size: 13px;
   text-decoration: none;
@@ -264,7 +265,7 @@
 
 .description {
   font-size: 13px;
-  color: #666666;
+  color: var(--text-secondary);
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -276,26 +277,26 @@
 }
 
 .program-btn {
-  background-color: #ffffff;
-  border: 1px solid #d9d9d9;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 12px 16px;
   text-align: left;
   font-size: 13px;
   font-weight: 700;
-  color: #111111;
+  color: var(--text-primary);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .program-btn:hover {
-  border-color: #d62828;
-  background-color: #fff7f7;
+  border-color: var(--accent);
+  background-color: var(--bg-primary);
 }
 
 .footer {
-  background-color: #111111;
-  color: #ffffff;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   text-align: center;
   padding: 18px 20px;
   font-size: 12px;
