@@ -7,7 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
   root: fileURLToPath(new URL('./', import.meta.url)),
-  base: '/annyleise-vue-app/',
+  base: process.env.GITHUB_ACTIONS ? '/annyleise-vue-app/' : '/',
   plugins: [
     vue(),
     vueDevTools(),
